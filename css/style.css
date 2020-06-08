@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url('../images/bg-intro-desktop.png');
+    color: white;
+    font-family: 'Poppins';
+}
+
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.container > div{
+    flex: 1;
+    padding: 0 20px;
+}
+.left p{
+    font-size: 16px;
+    opacity: 0.8;
+}
+.left h1{
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.box{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow:0 6px rgba(0, 0, 0, .2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blue p{
+    margin: 0;
+}
+
+.blue{
+    background-color: hsl(248, 32%, 49%);
+
+}
+
+input{
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    border: 1px solid hsl(246, 25%, 77%);
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    border:  1px solid hsl(248, 32%, 49%);
+    outline: none;
+}
+
+button{
+    display: block;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    /* box-shadow: 0 2px hsl(154, 41%, 7%); */
+    box-shadow: 0 0 3px hsl(154, 59%, 51%);
+-moz-box-shadow: 0 0 3px hsl(154, 59%, 51%);
+-webkit-box-shadow: 0 0 3px hsl(154, 59%, 51%);
+-o-box-shadow: 0 0 3px hsl(154, 59%, 51%);
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    box-shadow: 0 0 hsl(154, 59%, 51%);
+}
+small{
+
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        flex-direction: column;
+    }
+    .container div:first-child{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .box{
+        margin-top: 20px;
+    }
+    .left h1{
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
